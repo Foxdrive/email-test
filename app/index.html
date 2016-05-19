@@ -8,9 +8,13 @@
       margin: 0;
       padding: 0;
     }
+    td{
+      color: #1E1E1E;
+      font-family: 'Avenir Next LT Pro', Helvetica, Arial, sans-serif;
+    }
     .line-separator{
       height: 130px;
-      background-image: url('images/line-background.png');
+      background-image: url('http://foxdrive.github.io/email-test/app/images/line-background.png');
       background-position: center;
       background-repeat: repeat-x;
       padding-top: 60px
@@ -47,25 +51,51 @@
       color: #9bc0dd;
       background-color: #9bc0dd;
     }
+    @media screen and (max-width: 600px){
+      .width-full{
+        max-width: 100% !important;
+      }
+      .no-border-left{
+        padding-right: 0 !important;
+        border-right: solid 0px transparent !important;
+        border-bottom: dotted 1px #B7B7B7 !important;
+        padding-bottom: 40px !important;
+      }
+      .no-border-right{
+        padding-left: 0px !important;
+        padding-top: 40px !important;
+      }
+      .stack-column{
+        display: block !important;
+        width: 100% !important;
+      }
+      .mobile-padding{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+      .mobile-title{
+        font-size: 20px !important;
+      }
+    }
   </style>
 </head>
 <body>
-<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<table cellpadding="0" cellspacing="0" class="width-full" width="100%" border="0">
   <tr>
     <td align="center">
-      <table cellspacing="0" cellpadding="0" border="0" width="100%"
-             style="max-width: 600px; font-family: 'Avenir Next LT Pro', Helvetica, Arial, sans-serif; font-size: 14px; color: #1E1E1E;">
+      <table cellspacing="0" cellpadding="0" border="0" class="width-full" width="600"
+             style="font-family: 'Avenir Next LT Pro', Helvetica, Arial, sans-serif; font-size: 14px; color: #1E1E1E;">
         <tr>
           <td style="padding: 26px; background-color: #EDEDED">
             <table cellpadding="0" cellspacing="0" width="100%" border="0" style="background-color: #ffffff">
               <tr>
                 <td align="center" style="padding-top: 23px; padding-bottom: 22px; background-color: #3781ba;">
-                  <img src="images/logo_large.png" alt="logo" height="46" style="display: block">
+                  <img src="http://foxdrive.github.io/email-test/app/images/logo_large.png" alt="logo" height="46" style="display: block; max-width: 100%">
                 </td>
               </tr>
               <tr>
                 <td align="center" height="195px" valign="center">
-                  <span style="font-size: 30px; font-weight: bold; padding-bottom: 22px; display: inline-block;">Your Week in Review</span>
+                  <span class="mobile-title" style="font-size: 30px; font-weight: bold; padding-bottom: 22px; display: inline-block;">Your Week in Review</span>
                   <br>
                   <span style="font-size: 21px; color: #999999; display: inline-block;">June 25 - July 3</span>
                 </td>
@@ -80,7 +110,7 @@
               </tr>
               <tr>
                 <td class="line-separator" align="center" valign="top">
-                  <img src="images/lady.png" alt="Dr" style="display: block; width: 70px;">
+                  <img src="http://foxdrive.github.io/email-test/app/images/lady.png" alt="Dr" style="display: block; width: 70px;">
                   <span style="padding-top: 15px;">Dr. Matossian</span>
                 </td>
               </tr>
@@ -88,12 +118,12 @@
                 <td style="padding-left: 40px; padding-right: 40px;">
                   <table cellpadding="0" cellspacing="0" width="100%" border="0">
                     <tr>
-                      <td
+                      <td class="no-border-left stack-column"
                         style="width: 49%; border-right: dotted 1px #B7B7B7; border-bottom: dotted 1px #B7B7B7; padding-right: 70px; padding-bottom: 40px">
                         <table cellpadding="0" cellspacing="0" width="100%" border="0" style="text-align: center;">
                           <tr>
                             <td align="center">
-                              <img src="images/graph_1.png" alt="graph 1" style="display: block; width: 134px;">
+                              <img src="http://foxdrive.github.io/email-test/app/images/graph_1.png" alt="graph 1" style="display: block; width: 134px;">
                             </td>
                           </tr>
                           <tr>
@@ -110,12 +140,12 @@
                           </tr>
                         </table>
                       </td>
-                      <td
+                      <td class="no-border-right stack-column"
                         style="width: 49%; border-bottom: dotted 1px #B7B7B7; padding-left: 70px; padding-bottom: 40px">
                         <table cellpadding="0" cellspacing="0" width="100%" border="0" style="text-align: center;">
                           <tr>
                             <td align="center">
-                              <img src="images/graph_2.png" alt="graph 2" style="display: block; width: 134px;">
+                              <img src="http://foxdrive.github.io/email-test/app/images/graph_2.png" alt="graph 2" style="display: block; width: 134px;">
                             </td>
                           </tr>
                           <tr>
@@ -134,7 +164,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td style="border-right: dotted 1px #B7B7B7; padding-right: 75px; padding-top: 55px">
+                      <td class="no-border-left stack-column" style="border-right: dotted 1px #B7B7B7; padding-right: 75px; padding-top: 55px">
                         <table cellpadding="0" cellspacing="0" width="100%" border="0" style="text-align: center;">
                           <tr>
                             <td class="color-light-gray percentage-number">
@@ -149,7 +179,7 @@
                           </tr>
                         </table>
                       </td>
-                      <td style="padding-left: 75px; padding-top: 55px">
+                      <td class="no-border-right stack-column" style="padding-left: 75px; padding-top: 55px">
                         <table cellpadding="0" cellspacing="0" width="100%" border="0" style="text-align: center;">
                           <tr>
                             <td class="color-blue percentage-number">
@@ -170,7 +200,7 @@
               </tr>
               <tr>
                 <td class="line-separator" align="center" valign="top">
-                  <img src="images/awdeh.png" alt="Dr" style="display: block; width: 70px;">
+                  <img src="http://foxdrive.github.io/email-test/app/images/awdeh.png" alt="Dr" style="display: block; width: 70px;">
                   <span style="padding-top: 15px;">Dr. Vedula</span>
                 </td>
               </tr>
@@ -178,12 +208,12 @@
                 <td style="padding-left: 40px; padding-right: 40px;">
                   <table cellpadding="0" cellspacing="0" width="100%" border="0">
                     <tr>
-                      <td
-                        style="width: 49%; border-right: dotted 1px #B7B7B7; border-bottom: dotted 1px #B7B7B7; padding-right: 70px; padding-bottom: 40px">
+                      <td class="no-border-left stack-column"
+                          style="width: 49%; border-right: dotted 1px #B7B7B7; border-bottom: dotted 1px #B7B7B7; padding-right: 70px; padding-bottom: 40px">
                         <table cellpadding="0" cellspacing="0" width="100%" border="0" style="text-align: center;">
                           <tr>
                             <td align="center">
-                              <img src="images/graph_1.png" alt="graph 1" style="display: block; width: 134px;">
+                              <img src="http://foxdrive.github.io/email-test/app/images/graph_1.png" alt="graph 1" style="display: block; width: 134px;">
                             </td>
                           </tr>
                           <tr>
@@ -200,12 +230,12 @@
                           </tr>
                         </table>
                       </td>
-                      <td
-                        style="width: 49%; border-bottom: dotted 1px #B7B7B7; padding-left: 70px; padding-bottom: 40px">
+                      <td class="no-border-right stack-column"
+                          style="width: 49%; border-bottom: dotted 1px #B7B7B7; padding-left: 70px; padding-bottom: 40px">
                         <table cellpadding="0" cellspacing="0" width="100%" border="0" style="text-align: center;">
                           <tr>
                             <td align="center">
-                              <img src="images/graph_2.png" alt="graph 2" style="display: block; width: 134px;">
+                              <img src="http://foxdrive.github.io/email-test/app/images/graph_2.png" alt="graph 2" style="display: block; width: 134px;">
                             </td>
                           </tr>
                           <tr>
@@ -224,26 +254,26 @@
                       </td>
                     </tr>
                     <tr>
-                      <td style="border-right: dotted 1px #B7B7B7; padding-right: 75px; padding-top: 55px">
+                      <td class="no-border-left stack-column" style="border-right: dotted 1px #B7B7B7; padding-right: 75px; padding-top: 55px">
                         <table cellpadding="0" cellspacing="0" width="100%" border="0" style="text-align: center;">
                           <tr>
-                            <td class="percentage-number color-light-gray">
+                            <td class="color-light-gray percentage-number">
                               70%
                             </td>
                           </tr>
                           <tr>
-                            <td class="percentage-text color-dark-gray">
+                            <td class="color-dark-gray percentage-text">
                               Doctor’s Historic <br>
                               Conversion Rate
                             </td>
                           </tr>
                         </table>
                       </td>
-                      <td style="padding-left: 75px; padding-top: 55px">
+                      <td class="no-border-right stack-column" style="padding-left: 75px; padding-top: 55px">
                         <table cellpadding="0" cellspacing="0" width="100%" border="0" style="text-align: center;">
                           <tr>
-                            <td class="percentage-number color-blue">
-                              50%
+                            <td class="color-blue percentage-number">
+                              53%
                             </td>
                           </tr>
                           <tr>
@@ -294,12 +324,12 @@
               </tr>
               <tr>
                 <td align="center" style="padding-bottom: 30px;">
-                  <img src="images/graph_3.png" width="100%" alt="Graph 3" style="display: block; max-width: 391px;">
+                  <img src="http://foxdrive.github.io/email-test/app/images/graph_3.png" width="391" alt="Graph 3" style="display: block; max-width: 100%;">
                 </td>
               </tr>
               <tr>
                 <td align="center" style="padding-bottom: 30px;">
-                  <img src="images/graph_numbers.jpg" width="308" alt="Graph Numbers" style="display: block;">
+                  <img src="http://foxdrive.github.io/email-test/app/images/graph_numbers.jpg" width="308" alt="Graph Numbers" style="display: block;">
                 </td>
               </tr>
               <tr>
@@ -308,7 +338,7 @@
                 </td>
               </tr>
               <tr>
-                <td style="padding-top: 40px; padding-right: 60px; padding-bottom: 0; padding-left: 60px; background-color: #3781ba;">
+                <td class="mobile-padding" style="padding-top: 40px; padding-right: 60px; padding-bottom: 0; padding-left: 60px; background-color: #3781ba;">
                   <table cellpadding="0" cellspacing="0" width="100%" border="0">
                     <tr>
                       <td class="percentage-text" align="center" style="color: #ffffff; padding-bottom: 40px;">
